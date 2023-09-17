@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="style.css">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="cycles.jpg" style="width:100%">
+  <div class="text">bikes</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="appliance.jpg" style="width:100%">
+  <div class="text">appliance</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="grocery.jpg" style="width:100%">
+  <div class="text">grocery</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+</div>
+
+  <h3 align="center"style="margin-left: 600px;margin-right: 600px; border: 1px solid;border-radius: 0.5em;background-color: aquamarine;" >
+    BEST OF APPLIANCES </h3>
+<pre style="border: none; background-color: white;">
+
+
+</pre>
+    <div id="sty" class="row">
+      <div id="fir" class="col-lg-3">
+          <a href="#"><img style="border-radius: 1em;" src="washing.jpg">
+             <div class="card-body">
+                <p style="text-align: center;">washing machines</p>
+          </div></a>
+      </div>
+      <div id="fir" class="col-lg-3">
+              <a href="#"><img style="border-radius: 1em;" src="refrige.jpg">
+                 <div class="card-body">
+                    <p style="text-align: center;">Refrigerator</p>
+              </div></a>
+      </div>
+      <div id="fir" class="col-lg-3">
+          <a href="#"><img style="border-radius: 1em;" src="ac.jpg">
+              <div class="card-body">
+                 <p style="text-align: center;">Air Conditioner</p>
+           </div></a>
+      </div>
+      <div id="fir" class="col-lg-3">
+          <a href="#"><img style="border-radius: 1em;" src="chimney.jpg">
+              <div class="card-body">
+                 <p style="text-align: center;">Chimeny</p>
+           </div></a>
+      </div>
+    </div>
+    <h3  align="center" style="text-decoration: none;background-color: aqua; margin-left: 600px; margin-right: 600px; border: 1px solid;border-radius: 0.2em;"><a href="#">view all</a></h3>
+
+    <pre style="border: none; background-color: white;">
+
+
+    </pre>
+    <h3 align="center"style="margin-left: 600px;margin-right: 600px; border: 1px solid;border-radius: 0.5em;background-color: aquamarine;" >
+      Beauty,toys and gifts </h3>
+  <pre style="border: none; background-color: white;">
+  
+  
+  </pre>
+      <div id="sty" class="row">
+        <div id="fir" class="col-lg-3">
+            <a href="#"><img style="border-radius: 1em;" src="beauty.jpg">
+               <div class="card-body">
+                  <p style="text-align: center;">Beauty</p>
+            </div></a>
+        </div>
+        <div id="fir" class="col-lg-3">
+                <a href="#"><img style="border-radius: 1em;" src="sofa.jpg">
+                   <div class="card-body">
+                      <p style="text-align: center;">Furnitures</p>
+                </div></a>
+        </div>
+        <div id="fir" class="col-lg-3">
+            <a href="#"><img style="border-radius: 1em;" src="teddy.jpg">
+                <div class="card-body">
+                   <p style="text-align: center;">Gifts</p>
+             </div></a>
+        </div>
+        <div id="fir" class="col-lg-3">
+            <a href="#"><img style="border-radius: 1em;" src="bags.jpg">
+                <div class="card-body">
+                   <p style="text-align: center;">Side bags</p>
+             </div></a>
+        </div>
+      </div>
+      <h3  align="center" style="text-decoration: none;background-color: aqua; margin-left: 600px; margin-right: 600px; border: 1px solid;border-radius: 0.2em;"><a href="#">view all</a></h3>
+  
+
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 1000); 
+}
+</script>
+
+
+</body>
+</html> 
